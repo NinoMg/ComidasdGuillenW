@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>Comidas Guillén - Empanadas Caseras</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Caveat:wght@600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -36,6 +36,13 @@ body{font-family:var(--f-body);background:var(--navy);color:var(--cream);min-hei
 /* PATRON FIRMA: puntada / repulgue - lo usamos como divisor recurrente en toda la app */
 .seam{height:7px;background-image:radial-gradient(circle,var(--gold-dark) 1.7px,transparent 1.9px);background-size:13px 7px;background-position:center;opacity:.55}
 .seam.on-card{background-image:radial-gradient(circle,rgba(241,237,227,.5) 1.5px,transparent 1.7px)}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
 
 /* HEADER */
 .header{background:linear-gradient(180deg,var(--navy) 0%,rgba(11,27,38,.95) 100%);padding:12px 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
